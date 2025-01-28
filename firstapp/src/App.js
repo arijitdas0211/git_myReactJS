@@ -1,9 +1,10 @@
 import Button from "./Button";
 
 export default function App() {
+  const name = "Arijit";
   return (
     <>
-      <h1>Hello from React JS</h1>
+      <h1>Hello {name}</h1>
       <Button />
     </>
   )
