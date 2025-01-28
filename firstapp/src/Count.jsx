@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./btnStyle.css";
 
-export default function Count(props) {
+export default function Count() {
     const [count, setCount] = useState(0);
     const [name, setName] = useState('Arijit');
 

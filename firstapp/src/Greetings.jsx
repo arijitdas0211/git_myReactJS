@@ -1,11 +1,11 @@
 import React from 'react'
 
 // We need to export function as default. Otherwise, import should be { Greetings }
-export function Greetings(props) {    // Whenever passing only one prop use props. Otherwise, {name, age} like this.           
+export default function Greetings({name, age, last_name}) {    // Whenever passing only one prop use props. Otherwise, {name, age} like this.           
   return (
     <>
-        <h2>Hello {props.name} {props.last_name}</h2>
-        <p>Your age: {props.age} </p>
+        <h2>Hello {name} {last_name}</h2>
+        <p>Your age: {age} </p>
     </>
   )
 }
