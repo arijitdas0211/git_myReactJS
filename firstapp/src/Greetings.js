@@ -1,9 +1,15 @@
 import React from 'react'
 
-export default function Greetings() {
+// We need to export function as default. Otherwise, import should be { Greetings }
+export function Greetings(props) {    // Whenever passing only one prop use props. Otherwise, {name, age} like this.           
   return (
     <>
-        <h1>Hello </h1>
+        <h2>Hello {props.name} {props.last_name}</h2>
+        <p>Your age: {props.age} </p>
     </>
   )
 }
+
+// Props are immutable
+// In child properties (props) are read only property.
+// Parent to child data can flow

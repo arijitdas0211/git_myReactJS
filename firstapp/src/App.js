@@ -1,12 +1,17 @@
 import React from 'react';
-import Form from './Form';
-import Greetings from './Greetings';
+// import Form from './Form';
+// import { Greetings } from './Greetings';      // Whenever we do not export a function as default we need to wrap it in {}.
 
 export default function App() {
+  var number = 38;
   return (
     <>
-      <Greetings />
-      <Form />
+      <h2>{number} is {number%2 === 0 ? ' is even number.' : ' is odd number.'}</h2>
+
+      {/* <Greetings name="Arijit" age={28} />
+      <Greetings name="Pooja" age={26} />
+      <Greetings name="Rahul" lasst_name={"Verma"} />
+      <Form /> */}
     </>
   )
 }
