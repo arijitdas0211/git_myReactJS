@@ -1,11 +1,12 @@
-import Button from "./Button";
+import React from 'react';
+import Form from './Form';
+import Greetings from './Greetings';
 
 export default function App() {
-  const name = "Arijit";
   return (
     <>
-      <h1>Hello {name}</h1>
-      <Button />
+      <Greetings />
+      <Form />
     </>
   )
-};
+}
