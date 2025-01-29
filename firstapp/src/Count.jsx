@@ -11,7 +11,6 @@ export default function Count() {
 
     const increase = ()=> {
         setCount(count + 1);
-        
     }
 
     const decrease = ()=> {
