@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
-      Home Component
+      <p>Home Component</p>
       <div>
-        <Link to={"/about"}>About</Link>
-      </div>
-      <div>
-        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/about"}>
+          <button>About</button>
+        </Link>
+
+        <Link to={"/contact"}>
+          <button>Contact</button>
+        </Link>
       </div>
     </div>
   );

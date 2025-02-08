@@ -1,27 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 export default function Payment({ user }) {
   const [click, setClick] = useState(false);
-  let [balance, setBalance] = useState(user.balance);
 
   const handleClick = () => {
     setClick(true);
-    setBalance(balance - 5000);
   };
 
   if (click) {
     return (
-        <Payment user={{ ...user, balance }} />
+      <>
+        <h1>Payment Component</h1>
+        <h3>
+          {user.username} {user.balance}
+        </h3>
+        <button onClick={handleClick}>Pay</button>
+        <h3>
+          {user.username}, Updated Balance: {user.balance - 5000}
+        </h3>
+      </>
     );
   }
-
   return (
-    <div>
+    <>
       <h1>Payment Component</h1>
       <h3>
-        Username: {user.username} | Balance: {user.balance}
+        {user.username} {user.balance}
       </h3>
       <button onClick={handleClick}>Pay</button>
-    </div>
-  )
-};
+    </>
+  );
+}

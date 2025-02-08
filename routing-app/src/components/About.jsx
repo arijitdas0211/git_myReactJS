@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom'
 export default function About() {
   return (
     <div>
-      About Component
+      <p>About Component</p>
       <div>
-        <Link to={"/"}>Home</Link>
-      </div>
-      <div>
-        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/"}>
+          <button>Home</button>
+        </Link>
+        <Link to={"/contact"}>
+          <button>Contact</button>
+        </Link>
       </div>
     </div>
-  )
+  );
 }
